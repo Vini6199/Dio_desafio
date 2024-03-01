@@ -5,15 +5,15 @@ drop procedure company_insert;
 delimiter \\
 create procedure company_insert(
 	in fname_e varchar(15),
-    in minit_e char(1),
-    in Lname_e varchar(15),
+    	in minit_e char(1),
+    	in Lname_e varchar(15),
 	in Ssn_e char(9),
-    in Bdate_e date,
-    in Address_e varchar(30),
-    in sex_e char(1),
-    in Salary_e decimal(10,2),
-    in Super_ssn_e char(9),
-    in Dno_e int
+    	in Bdate_e date,
+    	in Address_e varchar(30),
+    	in sex_e char(1),
+    	in Salary_e decimal(10,2),
+    	in Super_ssn_e char(9),
+    	in Dno_e int
 ) 
 begin
 	if (length(Ssn_e) != 9) then 
@@ -25,6 +25,6 @@ begin
 end \\
 delimiter ;
 
-call company_insert('Maria', 'M', 'Silva', 156797389, '1980/09/21','Rua Silva Dinda 29','F','2000',null,4);
+call company_insert('Maria', 'M', 'Silva', 156797389, '1980/09/21','Rua Silva Dinda 29','F','20000',null,5);
 
     
